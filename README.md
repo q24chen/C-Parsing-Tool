@@ -10,10 +10,10 @@ Ensure that LLVM is installed on your system. LLVM provides the Clang-C API need
 Make sure CMake is installed. CMake is used to configure the build process.[CMAKE DOWNLOAD PAGE](https://cmake.org/download/) 
 
 
-## Configuring the Project：
+### Configuring the Project：
 Open the CMakeLists.txt file in the root directory of the project and Locate the include_directories and link_directories directives. Replace the paths in these directives with the actual paths to the include and lib directories in your LLVM installation. These paths are where LLVM's headers and libraries are located.
 
-## Building the Project:
+### Building the Project:
 Ensure you are in the root directory of the project where CMakeLists.txt is located.
 ```
 cmake -B build
@@ -21,7 +21,7 @@ cd build
 cmake --build .
 ```
 
-## Running the Executable:
+### Running the Executable:
 ```
 cd ..
 .\build\Debug\analyze.exe
