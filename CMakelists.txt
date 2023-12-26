@@ -1,0 +1,14 @@
+
+cmake_minimum_required(VERSION 3.10)
+
+
+project(Static-analyze)
+
+set(CMAKE_CXX_COMPILER "clang++")
+
+include_directories("C:/Program Files/LLVM/include")
+link_directories("C:/Program Files/LLVM/lib")
+
+add_executable(analyze FunctionAnalyze.cpp)
+
+target_link_libraries(analyze libclang)
